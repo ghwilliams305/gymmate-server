@@ -9,7 +9,7 @@ import numpy as np
 
 from cryptography.fernet import Fernet
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, session, url_for, jsonify
+    Blueprint, flash, g, redirect, render_template, request, session, url_for, jsonify, send_from_directory, current_app
 )
 from werkzeug.security import check_password_hash, generate_password_hash
 
@@ -280,3 +280,10 @@ def get_k_value():
             return jsonify({'message': e}), 500
 
     return 'k_value'
+
+@bp.route('/exercise_videos/<exercisename>')
+def send_exercise_video(exercisename):
+    file_name = f'{exercisename}.mp4'
+    file_path = os.path.join(current_app.root_path, 'exercise_videos')
+
+    return send_from_directory(file_path, file_name, mimetype='video/mp4')
