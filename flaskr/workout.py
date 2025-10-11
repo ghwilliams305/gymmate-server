@@ -283,7 +283,7 @@ def get_k_value():
 
 @bp.route('/exercise_videos/<exercisename>')
 def send_exercise_video(exercisename):
-    file_name = f'{exercisename}.mp4'
+    file_name = f'{exercisename}.gif'
     file_path = os.path.join(current_app.root_path, 'exercise_videos')
 
-    return send_from_directory(file_path, file_name, mimetype='video/mp4')
+    return send_from_directory(file_path, file_name, mimetype='image/gif')
