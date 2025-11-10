@@ -59,4 +59,7 @@ def create_app(test_config=None):
     from . import workout
     app.register_blueprint(workout.bp)
 
+    from . import portal
+    app.register_blueprint(portal.bp)
+
     return app

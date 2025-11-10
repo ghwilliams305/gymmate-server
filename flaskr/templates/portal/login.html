@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block needs %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+{% endblock %}
+
+{% block header %}
+    <h1>Login</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="email">E-mail</label>
+        <input name="email" id="email">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Log In">
+        <div class="or">
+            <hr>
+            <p>OR</p>
+            <hr>
+        </div>
+        <button><img src="{{ url_for('static', filename='google-icon.png') }}" alt="Google Logo">Sign in with Google</button>
+    </form>
+{% endblock %}

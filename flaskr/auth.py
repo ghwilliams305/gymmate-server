@@ -173,7 +173,7 @@ def save_profile():
                 )
                 db.commit()
             except db.IntegrityError:
-                error = f'User {username} or E-mail {email} is already registered'
+                error = f'User {data["username"]} or E-mail {data["email"]} is already registered'
             else:
                 db.execute(
                     'UPDATE user_info SET body_weight = ?, height = ?, daily_rate = ?, experience = ?, A = ?, B = ?, C = ?, I = ?, k = ?, goal = ?, work_time = ? WHERE user_id = ?',
