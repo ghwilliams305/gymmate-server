@@ -2,11 +2,13 @@ import os
 
 from flask import Flask, request
 from cryptography.fernet import Fernet
+from authlib.integrations.flask_client import OAuth
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='685a83021836f61f69d93dd775af517b18b753d8501ac4385c7be4ead70a6788',
+        SERVER_NAME='localhost:5000',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
 
@@ -61,5 +63,9 @@ def create_app(test_config=None):
 
     from . import portal
     app.register_blueprint(portal.bp)
+
+    from . import google
+    google.oauth.init_app(app)
+    app.register_blueprint(google.bp)
 
     return app

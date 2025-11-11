@@ -20,6 +20,7 @@ footer li:active {
 footer ul {
     align-items: center;
     display: flex;
+    height: 7rem;
     justify-content: space-around;
 }
 
