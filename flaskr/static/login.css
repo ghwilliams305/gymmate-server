@@ -17,6 +17,7 @@ form a {
     font-size: 1.1rem;
     display: inline-flex;
     padding: 1rem;
+    text-decoration: none;
 }
 
 form a img {

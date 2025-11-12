@@ -6,7 +6,7 @@ from flask import (
 from werkzeug.security import check_password_hash, generate_password_hash
 from authlib.integrations.flask_client import OAuth
 
-from flaskr.db import get_db
+from flaskr.db import get_db, encrypt_id
 
 bp = Blueprint('google', __name__, url_prefix='/google')
 oauth = OAuth()
@@ -39,6 +39,29 @@ def google():
 def google_auth():
     token = oauth.google.authorize_access_token()
     nonce = session.pop('nonce', None)
-    user = oauth.google.parse_id_token(token, nonce)
-    print('Google user:', user)
+    google_user = oauth.google.parse_id_token(token, nonce)
+    username = f'google_user:{encrypt_id(int(google_user['sub']))}'
+    password_placeholder = f'google_pass:{encrypt_id(int(google_user['sub']))}'
+    db = get_db()
+    error = None
+    user = db.execute(
+        'SELECT * FROM user WHERE username = ?', (username, )
+    ).fetchone()
+
+    if user is None:
+        error = 'No google account'
+        print('No google account')
+        print('username', username)
+        print('password', password_placeholder)
+    elif not check_password_hash(user['password'], password_placeholder):
+        error = 'No google account'
+        print('No google account')
+        print('username', username)
+        print('password', password_placeholder)
+
+    if error is None:
+        session.clear()
+        session['user_id'] = user['id']
+        return '' #Add Redict Location
+
     return redirect(url_for('portal.login'))
