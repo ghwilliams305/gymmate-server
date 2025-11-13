@@ -41,7 +41,6 @@ def google_auth():
     nonce = session.pop('nonce', None)
     google_user = oauth.google.parse_id_token(token, nonce)
     username = f'google_user:{encrypt_id(int(google_user['sub']))}'
-    password_placeholder = f'google_pass:{encrypt_id(int(google_user['sub']))}'
     db = get_db()
     error = None
     user = db.execute(
@@ -50,18 +49,13 @@ def google_auth():
 
     if user is None:
         error = 'No google account'
-        print('No google account')
+        print(error)
         print('username', username)
-        print('password', password_placeholder)
-    elif not check_password_hash(user['password'], password_placeholder):
-        error = 'No google account'
-        print('No google account')
-        print('username', username)
-        print('password', password_placeholder)
 
     if error is None:
         session.clear()
         session['user_id'] = user['id']
         return '' #Add Redict Location
 
+    flash(error)
     return redirect(url_for('portal.login'))
