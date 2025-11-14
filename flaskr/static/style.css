@@ -3,19 +3,21 @@ footer {
     margin-top: 2rem;
 }
 
-footer li {
+footer a {
     color: #8f00ff;
-    display: inline;
+    text-decoration: none;
 }
 
-footer li:hover {
+footer a:hover {
     color: #fff;
     cursor: pointer;
 }
 
-footer li:active {
+footer a:active {
     opacity: 0.75;
 }
+
+footer li {display: inline;}
 
 footer ul {
     align-items: center;
@@ -48,6 +50,20 @@ nav {
     justify-content: space-between;
 }
 
+nav a {
+    color: #8f00ff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav a:active {
+    opacity: 0.75;
+}
+
 nav div.logo {
     align-items: center;
     display: flex;
@@ -69,19 +85,7 @@ nav img {
     height: 7rem;
 }
 
-nav li {
-    color: #8f00ff;
-    display: inline;
-}
-
-nav li:hover {
-    color: #fff;
-    cursor: pointer;
-}
-
-nav li:active {
-    opacity: 0.75;
-}
+nav li {display: inline;}
 
 nav ul {
     align-items: center;

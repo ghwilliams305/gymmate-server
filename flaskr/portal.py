@@ -34,6 +34,14 @@ def login():
 
     return render_template('portal/login.html')
 
+@bp.route('tos', methods=('GET', 'POST'))
+def tos():
+    return render_template('portal/tos.html')
+
+@bp.route('privacy', methods=('GET', 'POST'))
+def privacy():
+    return render_template('portal/privacy.html')
+
 @bp.before_app_request
 def load_logged_in_user():
     user_id = session.get('user_id')
