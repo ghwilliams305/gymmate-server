@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block needs %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block header %}
+    <div id="back-image">
+        <div id="back-shadow">
+            <div id="head-title">
+                <h1>Gymmate</h1>
+                <p>Smarter Reps, Stronger You.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section id="quote">
+        <article>
+            <p>{{ quote_text }}</p>
+        </article>
+    </section>
+    <section id="data-sum">
+        <h1>Welcome to Gymmate — Your Personal Fitness Planning Companion</h1>
+        <p>Gymmate is built for students, beginners, and everyday athletes who want a smarter, simpler way to plan workouts, track progress, and stay consistent. Whether you're discovering Gymmate for the first time or returning to check your dashboard, our mission stays the same: make fitness clearer, easier, and fully in your control.</p>
+        <h2>Your Data, Your Control</h2>
+        <p>We believe your fitness data belongs to you. That’s why Gymmate is designed with transparency and user control at the core.</p>
+        <p>Here’s the type of information Gymmate may store once you create an account and begin using the app:</p>
+        <ul>
+            <li><strong>Account Details</strong> — Your name, email, and authentication ID (e.g., Google Sign-In).</li>
+            <li><strong>Preferences</strong> — Fitness goals, settings, and any custom preferences you set.</li>
+            <li><strong>Activity</strong> — Exercises, sets, reps, weights, workout history, and progress metrics.</li>
+            <li><strong>Information</strong> — Device type, app version, and performance logs that help us improve app functionality.</li>
+            <li><strong>Optional Inputs</strong> — Notes, targets, or additional health/fitness data you choose to share.</li>
+        </ul>
+        <h2>Full Transparency, Always</h2>
+        <p>Once logged in, users can access a dedicated <a>Data Dashboard</a>, where you can:</p>
+        <ul>
+            <li>View everything Gymmate has collected about your account</li>
+            <li>Search through your stored workout history</li>
+            <li>Download your data for your own records</li>
+            <li>Request deletion of specific data or your entire profile</li>
+        </ul>
+        <p>We want the Gymmate experience to be trustworthy and empowering — a place where your progress stays private, secure, and yours.</p>
+    </section>
+    <section class="info">
+        <img src="{{ url_for('static', filename='image/technology-8118382_1280.jpg') }}" alt="server images">
+        <article>
+            <h1>Data Overview</h1>
+            <p><strong>See exactly what Gymmate stores about you.</strong></p>
+            <p>Gymmate is built on transparency, and your Data Overview gives you a clear snapshot of the information connected to your account — from basic profile details to your workout history and app activity.</p>
+            <p>Whether you’re exploring Gymmate for the first time or already tracking your fitness journey, this page shows you what’s collected, why it’s used, and how it benefits your experience.</p>
+            <a>→ View Data Overview</a>
+        </article>
+    </section>
+    <section class="info">
+        <article>
+            <h1>Privacy Policy Overview</h1>
+            <p><strong>Understand how Gymmate protects your data.</strong></p>
+            <p>Our Privacy Policy explains what information Gymmate collects, how it’s used, and the safeguards we put in place to keep it secure. This page breaks down our commitment to transparency, your rights as a user, and the choices you have regarding your personal information.</p>
+            <p>Whether you’re new to Gymmate or already tracking your workouts, this overview helps you clearly understand how your data is handled and why.</p>
+            <a href="{{ url_for('portal.privacy') }}">→ Read Privacy Policy</a>
+        </article>
+        <img src="{{ url_for('static', filename='image/lock-3410072_1280.jpg') }}" alt="picture of a lock">
+    </section>
+    <section class="info">
+        <img src="{{ url_for('static', filename='image/code-1839406_1280.jpg') }}" alt="picture of code">
+        <article>
+            <h1>Usage Reports</h1>
+            <p><strong>Understand how Gymmate supports your fitness progress.</strong></p>
+            <p>Usage Reports help you explore patterns in your workouts and app activity. See your training frequency, exercise trends, and consistency metrics — all in one place.</p>
+            <p>For new users, this page explains how Gymmate uses aggregated trends to improve your experience. For returning users, it’s a powerful tool for tracking personal improvement.</p>
+            <a>→ View Usage Reports</a>
+        </article>
+    </section>
+{% endblock %}

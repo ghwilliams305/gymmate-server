@@ -1,0 +1,153 @@
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.info a {
+    color: #8f00ff;
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-decoration: none;
+    width: 75%;
+}
+
+.info a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.info a:active {
+    color: #fff;
+}
+
+.info article {
+    width: 50%;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.info img {
+    height: auto;
+    width: 30%;
+}
+
+.info p {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    width: 75%;
+}
+
+.info p strong {
+    font-size: 1.5rem;
+}
+
+#back-image {
+    background-image: url("/static/image/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+
+#back-shadow {
+    align-items: center;
+    background-color: rgba(14, 11, 22, 0.4);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#data-sum {
+    background-color: #b0b0b0;
+    color: #0e0b16;
+    padding: 3rem;
+}
+
+#data-sum a {
+    color: #8f00ff;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#data-sum a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#data-sum a:active {
+    color: #fff;
+}
+
+#data-sum h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#data-sum h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#data-sum li {
+    font-size: 1.5rem;
+}
+
+#data-sum li strong {
+    font-size: 1.5rem;
+}
+
+#data-sum p {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    width: 50%;
+}
+
+#data-sum ul {
+    margin: 0.75rem auto;
+    width: 45%;
+}
+
+#head-title {
+    background-color: rgba(14, 11, 22, 0.27);
+    display: inline-block;
+    padding: 1rem 4rem;
+}
+
+#head-title h1 {
+    font-size: 6rem;
+}
+
+#head-title p {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+#quote {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+#quote article {
+    background-color: #8f00ff;
+    max-width: 60%;
+    padding: 3rem 5rem;
+}
+
+#quote article p {
+    font-size: 1.25rem;
+}

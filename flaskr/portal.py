@@ -4,6 +4,7 @@ from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for, jsonify
 )
 from werkzeug.security import check_password_hash
+import requests as req
 
 from flaskr.db import get_db
 
@@ -41,6 +42,23 @@ def tos():
 @bp.route('privacy', methods=('GET', 'POST'))
 def privacy():
     return render_template('portal/privacy.html')
+
+@bp.route('home', methods=('GET', 'POST'))
+def home():
+    url = 'https://zenquotes.io/api/random'
+
+    try:
+        response = req.get(url)
+
+        if response.status_code == 200:
+            response_json = response.json()[0]
+            quote_text = f""""{response_json['q']}" \n -{response_json['a']} (zenquotes.io)"""
+
+            return render_template('portal/home.html', quote_text=quote_text)
+        else:
+            return render_template('portal/home.html', quote_text="Failed to get quote")
+    except req.RequestException as e:
+        return render_template('portal/home.html', quote_text=f"Failed to get quote {e}")
 
 @bp.before_app_request
 def load_logged_in_user():

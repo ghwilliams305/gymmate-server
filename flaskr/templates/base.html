@@ -1,15 +1,15 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Gymmate</title>
-<link rel="icon" href="{{ url_for('static', filename='logo-backless.png') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='image/logo-backless.png') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 {% block needs %}{% endblock %}
 <nav>
     <div class="logo">
-        <img src="{{ url_for('static', filename='logo-backless.png') }}" alt="gymmate logo">
+        <img src="{{ url_for('static', filename='image/logo-backless.png') }}" alt="gymmate logo">
         <h1><strong>Gym</strong>mate</h1>
     </div>
     <ul>
-        <li><a>Home</a></li>
+        <li><a href="{{ url_for('portal.home') }}">Home</a></li>
         <li><a href="{{ url_for('portal.tos') }}">Terms of Service</a></li>
         <li><a href="{{ url_for('portal.privacy') }}">Privacy Policy</a></li>
         {% if g.user %}
@@ -26,9 +26,9 @@
     {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
     {% endfor %}
-    <section>
+    <main>
         {% block content %}{% endblock %}
-    </section>
+    </main>
     <footer>
         <ul>
             <li><a href="{{ url_for('portal.privacy') }}">Privacy Policy</a></li>
