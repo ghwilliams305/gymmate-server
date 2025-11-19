@@ -16,6 +16,7 @@
 .info a:hover {
     cursor: pointer;
     opacity: 0.5;
+    text-decoration: underline;
 }
 
 .info a:active {

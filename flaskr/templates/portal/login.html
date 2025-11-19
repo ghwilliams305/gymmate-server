@@ -13,12 +13,13 @@
 {% endblock %}
 
 {% block content %}
-    <form method="post">
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+    <form name="login" method="post">
         <label for="email">E-mail</label>
-        <input name="email" id="email">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <input type="submit" value="Log In">
+        <input name="email" id="email" oninput="validateForm()">
+        <label for="password" >Password</label>
+        <input type="password" name="password" id="password" oninput="validateForm()">
+        <input type="submit" value="Log In" disabled>
         <div class="or">
             <hr>
             <p>OR</p>

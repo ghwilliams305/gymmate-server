@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request
+from flask import Flask, request, redirect, url_for
 from cryptography.fernet import Fernet
 from authlib.integrations.flask_client import OAuth
 
@@ -24,7 +24,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def enterance():
-        return 'Your in the right place => gymmate api'
+        return redirect(url_for('portal.home'))
 
     @app.route('/error')
     def hello():

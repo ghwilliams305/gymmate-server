@@ -50,12 +50,18 @@ form input[type="submit"] {
     font-size: 1.1rem;
 }
 
-form input[type="submit"]:hover {
+form input[type="submit"]:disabled {
+    background-color: #8f00ff;
+    border-color: #8f00ff;
+    opacity: 0.5;
+}
+
+form input[type="submit"]:hover:enabled {
     background-color: #0e0b16;
     color: #8f00ff;
 }
 
-form input[type="submit"]:focus {
+form input[type="submit"]:focus:enabled {
     border-color: #8f00ff;
     opacity: 0.75;
 }
@@ -67,6 +73,16 @@ form input:focus {
 
 form label {
     font-size: 1.1rem;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 4rem;
 }
 
 .or {
