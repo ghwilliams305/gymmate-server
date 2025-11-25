@@ -4,8 +4,295 @@
     Privacy Policy
 {% endblock %}
 
+{% block needs %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/privacy.css') }}">
+{% endblock %}
+
 {% block header %}
-    <div>
-        <h1>Privacy Policy</h1>
+    <div id="back-image">
+        <div id="back-shadow">
+            <div id="head-title">
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
     </div>
+{% endblock %}
+
+{% block content %}
+    <section id="overview">
+        <h1>Gymmate Privacy Policy</h1>
+        <article>
+            <p><strong>Last Updated:</strong> November 24, 2025</p>
+            <p>Gymmate (“we,” “our,” or “us”) is a personalized fitness and workout companion application designed to help users plan workouts efficiently, track their progress over time, and receive AI-generated workout guidance that fits their goals and lifestyle.</p>
+            <p>This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our mobile application and related services (collectively, the “Service”).</p>
+            <p>By using Gymmate, you agree to the terms of this Privacy Policy.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="table-of-contents">
+        <h1>Table of Contents</h1>
+        <article>
+            <p>Gymmate Privacy Policy</p>
+            <ol>
+                <li><a href="#s1">Information We Collect</a></li>
+                <li><a href="#s2">How We Collect Data</a></li>
+                <li><a href="#s3">How We Use Your Data</a></li>
+                <li><a href="#s4">How Data Is Stored</a></li>
+                <li><a href="#s5">Data Transparency & User Controls</a></li>
+                <li><a href="#s6">Legal Basis for Processing</a></li>
+                <li><a href="#s7">Third-Party Services</a></li>
+                <li><a href="#s8">Data Protection & Security</a></li>
+                <li><a href="#s9">Children's Privacy</a></li>
+                <li><a href="#s10">Data Retention</a></li>
+                <li><a href="#s11">Your Rights</a></li>
+                <li><a href="#s12">International Data Transfers</a></li>
+                <li><a href="#s13">Beta Testing Notice</a></li>
+                <li><a href="#s14">Changes to This Policy</a></li>
+                <li><a href="#s15">Contact Information</a></li>
+            </ol>
+        </article>
+    </section>
+    <section id="s1">
+        <h1>1. Information We Collect</h1>
+        <article>
+            <p>We collect only the information necessary to operate and improve the Service.</p>
+        </article>
+        <h2>a. Personal Information</h2>
+        <article>
+            <p>Provided when you create an account or sign in:</p>
+            <ul>
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Profile image</li>
+                <li>Weight</li>
+                <li>Height</li>
+            </ul>
+            <p><strong>Google Sign-In:</strong> When you sign in with Google, we automatically receive your email address, name, and profile picture from your Google account. We do not receive or store your Google password.</p>
+        </article>
+        <h2>b. Workout & Progress Data</h2>
+        <article>
+            <p>Generated through app usage:</p>
+            <ul>
+                <li>Exercises completed</li>
+                <li>Workout duration, intensity, and frequency</li>
+                <li>AI-generated workout recommendations</li>
+                <li>Daily workout history and performance metrics</li>
+                <li>In-app difficulty and fatigue tracking</li>
+            </ul>
+            <p>This information is stored locally on the device and mirrored to a secure cloud storage system.</p>
+            <p><strong>Equipment data</strong> - Information about fitness equipment you have access to (e.g., dumbbells, resistance bands, gym membership) used to generate personalized workout recommendations.</p>
+        </article>
+        <h2>c. Device & Technical Data</h2>
+        <article>
+            <p>Collected automatically:</p>
+            <ul>
+                <li>Device model and operating system version</li>
+                <li>App performance metrics (e.g., crash logs)</li>
+                <li>Basic usage analytics (e.g., feature activity levels)</li>
+            </ul>
+            <p>No GPS data or precise location is collected.</p>
+        </article>
+        <h2>d. Optional User-Submitted Data</h2>
+        <article>
+            <p>If you choose to enter it:</p>
+            <ul>
+                <li>Workout notes or journals</li>
+                <li>Shared workout plans (future release)</li>
+                <li>Profile preferences</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s2">
+        <h1>2. How We Collect Data</h1>
+        <article>
+            <p>We collect data in three ways:</p>
+            <ol>
+                <li><strong>Directly from the user</strong> — when you sign in or log workouts manually.</li>
+                <li><strong>Automatically</strong> — when the app records workout or performance data.</li>
+                <li><strong>System-generated</strong> — when Gymmate’s algorithm calculates progress, goal tracking, or recommendations.</li>
+            </ol>
+            <p>We do <strong>not</strong> purchase or import user data from third parties.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s3">
+        <h1>3. How We Use Your Data</h1>
+        <article>
+            <p>We use collected information to:</p>
+            <ul>
+                <li>Provide core app functionality</li>
+                <li>Generate workout recommendations tailored to your goals and available equipment</li>
+                <li>Track and display fitness progress over time</li>
+                <li>Improve system performance and user experience</li>
+                <li>Fix software errors and measure app stability</li>
+                <li>Communicate with you regarding account or beta-testing updates</li>
+            </ul>
+            <p><strong>We do not sell personal data to third parties.</strong></p>
+            <p><strong>We do not share workout or identity data for advertising purposes.</strong></p>
+        </article>
+    </section>
+    <hr>
+    <section id="s4">
+        <h1>4. How Data Is Stored</h1>
+        <article>
+            <p>To maximize privacy and transparency:</p>
+            <ul>
+                <li>Workout logs and user-generated data are stored locally on your device</li>
+                <li><strong>A backup copy of your data is stored securely in our cloud infrastructure for account recovery and cross-device synchronization</strong></li>
+                <li>You may request access to, download, or deletion of your data at any time through the Data Transparency Portal</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s5">
+        <h1>5. Data Transparency & User Controls</h1>
+        <article>
+            <p>Gymmate provides a <strong>Data Transparency Portal</strong>, where you can:</p>
+            <ul>
+                <li>View all data collected about you</li>
+                <li>Search your workout and performance logs</li>
+                <li>Download/export your data</li>
+                <li>Request full account deletion – Before December 15, 2025 please email <a href="mailto:ghwilliams305@gmail.com" target="_blank">ghwilliams305@gmail.com</a> for data deletion</li>
+            </ul>
+            <p>If you delete your account, all associated personal and workout data will be permanently removed from our servers within a reasonable period.</p>
+        </article>
+        <h2>Data Breach Notification</h2>
+        <article>
+            <p>In the event that our secure cloud storage is compromised, we will notify affected users within 90 days of discovery of the breach. Notification will be sent to the email address associated with your account and will include information about what data was affected and steps you can take to protect yourself.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s6">
+        <h1>6. Legal Basis for Processing</h1>
+        <article>
+            <p>Where applicable, we rely on:</p>
+            <ul>
+                <li><strong>Contractual necessity</strong> — to provide the Service you requested</li>
+                <li><strong>Legitimate interest</strong> — to improve performance and reliability</li>
+                <li><strong>User consent</strong> — for analytics and customization features</li>
+            </ul>
+            <p>You may withdraw consent where applicable at any time.</p>
+        </article>
+        <h2>California Privacy Rights (CCPA)</h2>
+        <article>
+            <p>If you are a California resident, you have specific rights regarding your personal information:</p>
+            <ul>
+                <li><strong>Right to Know:</strong> You have the right to request disclosure of the categories and specific pieces of personal information we have collected about you, the categories of sources from which we collected it, our business purpose for collecting it, and the categories of third parties with whom we share it.</li>
+                <li><strong>Right to Delete:</strong> You have the right to request deletion of personal information we have collected from you, subject to certain exceptions.</li>
+                <li><strong>Right to Opt-Out of Sale:</strong> We do not sell your personal information. If our practices change, we will update this policy and provide you with the ability to opt-out.</li>
+                <li><strong>Right to Non-Discrimination:</strong> You have the right to not receive discriminatory treatment for exercising any of your CCPA rights.</li>
+            </ul>
+            <p>To exercise these rights, please use our Data Transparency Portal or contact us at <a href="mailto:[domain-based email]">[domain-based email]</a>. We will respond to verified requests within 45 days.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s7">
+        <h1>7. Third-Party Services</h1>
+        <article>
+            <p>Gymmate uses:</p>
+            <ul>
+                <li><strong>Google Authentication</strong> — for secure login</li>
+                <li><strong>Cloud hosting</strong> — for account mirroring and backup</li>
+                <li><strong>App Store / Google Play debugging tools</strong> — for crash reporting</li>
+            </ul>
+            <p>These services may collect basic technical information as part of operating their platforms.</p>
+            <p>We do <strong>not</strong> share personal workout data with them beyond what is required to run the app securely.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s8">
+        <h1>8. Data Protection & Security</h1>
+        <article>
+            <p>We implement industry-standard safeguards, including:</p>
+            <ul>
+                <li>Encrypted data transmission (HTTPS)</li>
+                <li>Separation of user identity and workout history</li>
+                <li>No plaintext storage of authentication credentials</li>
+                <li>Limited internal access to system-level logs only</li>
+            </ul>
+            <p>Despite these safeguards, no system is 100% secure. Users assume normal risks when transmitting information online.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s9">
+        <h1>9. Children’s Privacy</h1>
+        <article>
+            <p>Gymmate is not intended for individuals under <strong>13 years of age</strong>, and we do not knowingly collect information from children under 13.</p>
+            <p>If we become aware such data was collected, we will delete it promptly.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s10">
+        <h1>10. Data Retention</h1>
+        <article>
+            <p>We retain your data only as long as your account remains active.</p>
+            <p>If you delete your account through the Data Portal:</p>
+            <ul>
+                <li>All workout and profile data will be erased</li>
+                <li>Cached data on device will be removed</li>
+                <li>Cloud backup copies will be deleted within a reasonable timeframe</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s11">
+        <h1>11. Your Rights</h1>
+        <article>
+            <p>Depending on your jurisdiction, you may have the right to:</p>
+            <ul>
+                <li>Access the personal data we hold about you</li>
+                <li>Correct inaccurate data</li>
+                <li>Request deletion of your data</li>
+                <li>Withdraw consent for non-essential processing</li>
+                <li>Export your data for use elsewhere</li>
+            </ul>
+            <p>All rights may be exercised through the Data Transparency Portal or by contacting us.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s12">
+        <h1>12. International Data Transfers</h1>
+        <article>
+            <p>If you access Gymmate outside the United States, please be aware:</p>
+            <ul>
+                <li>Your data may be processed in the United States</li>
+                <li>U.S. data protection laws may differ from your region</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s13">
+        <h1>13. Beta Testing Notice</h1>
+        <article>
+            <p>Gymmate is currently in an ongoing beta testing phase.</p>
+            <p>During beta, we may collect:</p>
+            <ul>
+                <li>Additional crash or performance logs</li>
+                <li>Feedback provided through surveys or forms</li>
+            </ul>
+            <p>All beta data is treated with the same privacy protections and may be permanently deleted upon request.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s14">
+        <h1>14. Changes to This Policy</h1>
+        <article>
+            <p>We may update this Privacy Policy periodically.</p>
+            <p>When changes are made, we will:</p>
+            <ul>
+                <li>Post the updated version on our website</li>
+                <li>Update the “Last Updated” date above</li>
+            </ul>
+            <p>Your continued use of Gymmate after an update constitutes acceptance of the revised policy.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s15">
+        <h1>15. Contact Information</h1>
+        <article>
+            <p>For questions, requests, or privacy concerns, contact us at:</p>
+            <a href="mailto:ghwilliams305@gmail.com" target="_blank">ghwilliams305@gmail.com</a>
+        </article>
+    </section>
 {% endblock %}

@@ -4,8 +4,333 @@
     Terms of Service
 {% endblock %}
 
+{% block needs %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tos.css') }}">
+{% endblock %}
+
 {% block header %}
-    <div>
-        <h1>Terms of Service</h1>
+    <div id="back-image">
+        <div id="back-shadow">
+            <div id="head-title">
+                <h1>Terms of Service</h1>
+            </div>
+        </div>
     </div>
+{% endblock %}
+
+{% block content %}
+    <section id="overview" class="general">
+        <h1>Gymmate – Terms of Service</h1>
+        <article>
+            <p><strong>Last Updated:</strong> November 24, 2025</p>
+            <p><strong>Effective Date:</strong> November 25, 2025</p>
+            <br>
+            <p>Welcome to Gymmate (“the App,” “we,” or “us”).</p>
+            <p>By downloading, accessing, or using Gymmate, you agree to be bound by these Terms of Service (“Terms”).</p>
+            <p>If you do not agree, do not use the App.</p>
+        </article>
+    </section>
+    <section id="table-of-contents" class="general">
+        <h1>Table of Contents</h1>
+        <article>
+            <p>Gymmate - Terms of Service</p>
+            <ol>
+                <li><a href="#s1">Description of Service</a></li>
+                <li><a href="#s2">Eligibility</a></li>
+                <li><a href="#s3">Not Medical Advice</a></li>
+                <li><a href="#s4">User Accounts</a></li>
+                <li><a href="#s5">Acceptable Use</a></li>
+                <li><a href="#s6">User Content</a></li>
+                <li><a href="#s7">Data and Privacy</a></li>
+                <li><a href="#s8">Beta Testing Notice (If Applicable)</a></li>
+                <li><a href="#s9">Subscription and Pricing (If Applied in Future)</a></li>
+                <li><a href="#s10">Intellectual Property</a></li>
+                <li><a href="#s11">Disclaimers and Limitation of Liability</a></li>
+                <li><a href="#s12">Limitation of Liability</a></li>
+                <li><a href="#s13">Termination</a></li>
+                <li><a href="#s14">Changes to Terms</a></li>
+                <li><a href="#s15">Governing Law</a></li>
+                <li><a href="#s16">Contact Information</a></li>
+                <li><a href="#s17">App Updates and Service Continuity</a></li>
+            </ol>
+        </article>
+    </section>
+    <section id="s1">
+        <h1>1. Description of Service</h1>
+        <article>
+            <p>Gymmate is a fitness planning and workout generation tool that provides exercise recommendations, progress tracking, and optional social workout-sharing features. Gymmate does not provide personalized medical, nutritional, or physical therapy advice.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s2">
+        <h1>2. Eligibility</h1>
+        <article>
+            <p>You must be:</p>
+            <ul>
+                <li>At least 13 years old (or older if required by your country’s laws)</li>
+                <li>Legally allowed to enter into this agreement</li>
+                <li>Not prohibited from using U.S.-based software services</li>
+            </ul>
+            <p>Users under 18 must have permission from a parent or legal guardian and must have that parent or guardian review and agree to these Terms, including the Assumption of Risk and Release, on their behalf.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s3">
+        <h1>3. Not Medical Advice</h1>
+        <article>
+            <p>Gymmate provides <strong>general fitness information</strong>, not professional guidance.</p>
+            <p>By using Gymmate, you understand and agree:</p>
+            <ul>
+                <li>The App does <strong>not</strong> diagnose, treat, or prevent any disease or condition</li>
+                <li>You should consult a physician before beginning any exercise program</li>
+                <li>You are responsible for your own health and workout decisions</li>
+            </ul>
+            <p><strong>Gymmate is used at your own risk.</strong></p>
+        </article>
+        <h2>YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT:</h2>
+        <article>
+            <p><strong>Physical Activity Risks:</strong> Exercise and physical activity involve inherent risks of injury, including but not limited to muscle strains, sprains, joint injuries, cardiovascular events, and other bodily harm. These risks exist even when exercises are performed correctly and as recommended.</p>
+            <p><strong>Assumption of Risk:</strong> You voluntarily assume all risks associated with using Gymmate and following any workout recommendations, exercises, or fitness guidance provided through the App. You acknowledge that Gymmate's AI-generated recommendations are generalized and may not account for your specific physical limitations, pre-existing conditions, or individual health circumstances.</p>
+            <p><strong>Waiver of Claims:</strong> To the fullest extent permitted by law, you hereby release, waive, and discharge Gymmate, its founders, employees, contractors, and affiliates from any and all claims, liabilities, damages, or causes of action arising from or related to:</p>
+            <ul>
+                <li>Any injury, illness, or death resulting from your use of the App</li>
+                <li>Your participation in exercises or workouts suggested by or tracked through Gymmate</li>
+                <li>Any negligence by Gymmate in providing fitness recommendations or app functionality</li>
+            </ul>
+            <p><strong>Acknowledgment:</strong> By using Gymmate, you acknowledge that you have read this Assumption of Risk and Release, understand its contents, and agree to its terms voluntarily. If you do not agree, you must immediately discontinue use of the App.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s4">
+        <h1>4. User Accounts</h1>
+        <article>
+            <p>To use Gymmate, you must create an account, which may include authentication through Google or other providers.</p>
+            <p>You agree to:</p>
+            <ul>
+                <li>Provide accurate information</li>
+                <li>Not share your login credentials</li>
+                <li>Notify us if you suspect unauthorized access</li>
+            </ul>
+            <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s5">
+        <h1>5. Acceptable Use</h1>
+        <article>
+            <p>You agree <strong>not</strong> to:</p>
+            <ul>
+                <li>Use the App for illegal activity</li>
+                <li>Upload malicious code or attempt to access our systems without authorization</li>
+                <li>Reverse engineer, copy, or resell Gymmate</li>
+                <li>Harass, exploit, or harm other users</li>
+            </ul>
+            <p>We may remove content or ban accounts at our discretion.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s6">
+        <h1>6. User Content</h1>
+        <article>
+            <p>User-generated content may include:</p>
+            <ul>
+                <li>Saved workouts</li>
+                <li>Shared exercise plans</li>
+                <li>Notes or feedback</li>
+            </ul>
+            <p>You retain rights to your content, but grant Gymmate a <strong>non-exclusive, royalty-free license</strong> to store, process, and display it within the App as required for functionality.</p>
+            <p>You are responsible for your submissions.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s7">
+        <h1>7. Data and Privacy</h1>
+        <article>
+            <p>Your use of Gymmate is also governed by our <strong>Privacy Policy</strong>.</p>
+            <p>Key points:</p>
+            <ul>
+                <li>We do not sell user data</li>
+                <li>Workout history is stored separately from identity whenever possible</li>
+                <li>You may request data export or deletion</li>
+            </ul>
+            <p>View full Privacy Policy at: <a href="{{ url_for('portal.privacy') }}">Privacy Policy</a></p>
+        </article>
+    </section>
+    <hr>
+    <section id="s8">
+        <h1>8. Beta Testing Notice (If Applicable)</h1>
+        <article>
+            <p>If you are using a <strong>beta version</strong> of Gymmate, you acknowledge:</p>
+            <ul>
+                <li>Features may change without notice</li>
+                <li>The App may contain bugs or incomplete functionality</li>
+                <li>Your feedback may be used to improve the service</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s9">
+        <h1>9. Subscription and Pricing (If Applied in Future)</h1>
+        <article>
+            <p>Gymmate is currently free to use.</p>
+            <p>We may introduce paid features later. If so:</p>
+            <ul>
+                <li>You will always be notified before being charged</li>
+                <li>You may cancel anytime</li>
+                <li>Subscription terms will be provided at that time</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s10">
+        <h1>10. Intellectual Property</h1>
+        <article>
+            <p>All trademarks, logos, and content owned by Gymmate remain our exclusive property.</p>
+            <p>You may not:</p>
+            <ul>
+                <li>Use our brand assets without permission</li>
+                <li>Copy or redistribute the App or its content</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
+    <section id="s11">
+        <h1>11. Disclaimers and Limitation of Liability</h1>
+        <h2>A. Disclaimers</h2>
+        <article>
+            <p>Gymmate is provided "AS IS" and "AS AVAILABLE" with no warranty of any kind, either express or implied, including but not limited to:</p>
+            <ul>
+                <li>Warranties of merchantability or fitness for a particular purpose</li>
+                <li>Accuracy, reliability, or completeness of workout recommendations</li>
+                <li>Continuous, uninterrupted, or error-free operation</li>
+            </ul>
+        </article>
+        <h2>B. Limitation of Liability</h2>
+        <article>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+            <p>Gymmate, its founders, employees, and affiliates SHALL NOT BE LIABLE for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+            <ul>
+                <li>Personal injury or property damage resulting from your use of the App</li>
+                <li>Lost profits, data loss, or business interruption</li>
+                <li>Any damages arising from unauthorized access to your account</li>
+            </ul>
+        </article>
+        <h2>C. Exclusions</h2>
+        <article>
+            <p>This limitation of liability does not apply to damages caused by:</p>
+            <ul>
+                <li>Our gross negligence, willful misconduct, or fraud</li>
+                <li>Breach of data security obligations where legally prohibited from limiting liability</li>
+                <li>Death or personal injury caused by defects in the App where applicable law prohibits such limitations</li>
+            </ul>
+            <p>Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability for incidental or consequential damages. In such jurisdictions, our liability shall be limited to the greatest extent permitted by law.</p>
+        </article>
+        <h2>11.5 Indemnification</h2>
+        <article>
+            <p>You agree to indemnify, defend, and hold harmless Gymmate, its founders, officers, employees, contractors, and affiliates from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from or related to:</p>
+            <ul>
+                <li>Your use or misuse of the App</li>
+                <li>Your violation of these Terms of Service</li>
+                <li>Your violation of any rights of another person or entity</li>
+                <li>Any content you submit, post, or share through the App</li>
+                <li>Your violation of any applicable laws or regulations</li>
+                <li>Any injuries you sustain or claim to have sustained through use of the App</li>
+            </ul>
+            <p>This indemnification obligation will survive termination of your account and these Terms.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s12">
+        <h1>12. Limitation of Liability</h1>
+        <article>
+            <p>To the maximum extent allowed by law:</p>
+            <p>Gymmate, its founders, and partners are <strong>not liable</strong> for:</p>
+            <ul>
+                <li>Injuries resulting from workouts or exercises</li>
+                <li>Data loss or unauthorized account access</li>
+            </ul>
+            <p>Some jurisdictions do not allow these limits, so they may not apply to you.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s13">
+        <h1>13. Termination</h1>
+        <article>
+            <p>You may delete your account at any time.</p>
+            <p>We may suspend or terminate accounts that violate these Terms, misuse the App, or pose risk to the service.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s14">
+        <h1>14. Changes to Terms</h1>
+        <article>
+            <p>We may update these terms periodically. If changes are significant, users will be notified.</p>
+            <p>Continued use after changes constitutes acceptance.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s15">
+        <h1>15. Governing Law</h1>
+        <article>
+            <p>These Terms are governed by the laws of the State of Arizona, USA, without regard to conflict-of-law rules.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s16">
+        <h1>16. Contact Information</h1>
+        <article>
+            <p>For questions or requests:</p>
+            <br>
+            <p><strong>Gymmate Support</strong></p>
+            <a href="mailto:ghwilliams305@gmail.com">ghwilliams305@gmail.com</a>
+        </article>
+        <h2>16.5 Dispute Resolution and Arbitration</h2>
+        <h3>A. Binding Arbitration</h3>
+        <article>
+            <p>Any dispute, controversy, or claim arising out of or relating to these Terms or your use of Gymmate shall be resolved through binding arbitration rather than in court, except that you may assert claims in small claims court if your claims qualify.</p>
+        </article>
+        <h3>B. Arbitration Procedures</h3>
+        <article>
+            <p>Arbitration shall be conducted by a single arbitrator under the Commercial Arbitration Rules of the American Arbitration Association (AAA). The arbitration shall take place in Phoenix, Arizona, or remotely via videoconference.</p>
+            <p><strong>Remote Arbitration:</strong>  You may request to participate in arbitration remotely via videoconference. If you can demonstrate financial hardship that prevents you from participating (whether remotely or in Arizona), and the arbitrator agrees, you may participate remotely at no cost to you for the videoconference technology. However, you remain responsible for your own attorneys' fees and other costs unless otherwise awarded by the arbitrator.</p>
+        </article>
+        <h3>C. Class Action Waiver</h3>
+        <article>
+            <p>YOU AGREE THAT ANY ARBITRATION OR PROCEEDING SHALL BE CONDUCTED ON AN INDIVIDUAL BASIS ONLY AND NOT AS A CLASS ACTION, CONSOLIDATED ACTION, OR REPRESENTATIVE ACTION. You may not serve as a class representative or participate as a member of a class.</p>
+        </article>
+        <h3>D. Exceptions</h3>
+        <article>
+            <p>This arbitration agreement does not apply to:</p>
+            <ul>
+                <li>Claims for injunctive or equitable relief regarding intellectual property rights</li>
+                <li>Claims that cannot be arbitrated under applicable law</li>
+            </ul>
+        </article>
+        <h3>E. Opt-Out</h3>
+        <article>
+            <p>You may opt out of this arbitration agreement by sending written notice to [domain-based email] within 30 days of first using the App. Your notice must include your name, email address, and a clear statement that you wish to opt out of the arbitration agreement.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="s17">
+        <h1>17. App Updates and Service Continuity</h1>
+        <h2>A. Required Updates</h2>
+        <article>
+            <p>We may require you to update the App to continue using the Service. If you do not install required updates, some or all features may stop working. We are not responsible for any loss of functionality resulting from your failure to update.</p>
+        </article>
+        <h2>B. Deprecated Versions</h2>
+        <article>
+            <p>We may discontinue support for older versions of the App. If we discontinue support for the version you are using, we will provide at least 30 days' notice through the App or via email. After this period, the unsupported version may cease to function properly or at all.</p>
+        </article>
+        <h2>C. Service Shutdown</h2>
+        <article>
+            <p>We reserve the right to discontinue Gymmate at any time for any reason. If we permanently shut down the Service, we will:</p>
+            <ul>
+                <li>Provide at least 60 days' advance notice via email and in-app notification</li>
+                <li>Allow you to export your complete workout data before the shutdown date</li>
+                <li>Make reasonable efforts to assist you in transitioning to alternative services</li>
+                <li>No refunds will be provided for any unused subscription period in the event of service shutdown, except as required by applicable law.</li>
+            </ul>
+        </article>
+    </section>
 {% endblock %}
