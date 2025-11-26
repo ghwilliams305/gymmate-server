@@ -1,8 +1,13 @@
 * {
+    font-family: "Forum", serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
     transition: all ease-in 0.25s;
+}
+
+a, h1, h2, h3, h4, h5, h6, strong {
+    font-family: "Stack Sans Text", sans-serif;
 }
 
 footer {
@@ -20,9 +25,7 @@ footer a:hover {
     cursor: pointer;
 }
 
-footer a:active {
-    opacity: 0.75;
-}
+footer a:active {opacity: 0.75;}
 
 footer li {display: inline;}
 
@@ -51,6 +54,7 @@ nav {
     background-color: #0e0b16;
     box-shadow: 0 0.25rem 0.25rem #0e0b16;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: fixed;
     width: 100%;
@@ -67,9 +71,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-nav a:active {
-    opacity: 0.75;
-}
+nav a:active {opacity: 0.75;}
 
 nav div.logo {
     align-items: center;
@@ -107,4 +109,14 @@ nav ul {
     font-size: 1.1rem;
     font-weight: bold;
     padding: 1rem;
+}
+
+@media only screen and (max-width:629px) {
+    nav {padding-bottom: 1rem;}
+
+    nav ul {width: 100%;}
+}
+
+@media only screen and (max-width:629px) {
+    * {font-size: 12px;}
 }

@@ -19,13 +19,9 @@
     text-decoration: underline;
 }
 
-.info a:active {
-    color: #fff;
-}
+.info a:active {color: #fff;}
 
-.info article {
-    width: 50%;
-}
+.info article {width: 50%;}
 
 .info h1 {
     font-size: 2.5rem;
@@ -40,6 +36,7 @@
 }
 
 .info img {
+    align-self: center;
     height: auto;
     width: 30%;
 }
@@ -50,9 +47,7 @@
     width: 75%;
 }
 
-.info p strong {
-    font-size: 1.5rem;
-}
+.info p strong {font-size: 1.5rem;}
 
 #back-image {
     background-image: url("/static/image/logo.png");
@@ -87,9 +82,7 @@
     opacity: 0.5;
 }
 
-#data-sum a:active {
-    color: #fff;
-}
+#data-sum a:active {color: #fff;}
 
 #data-sum h1 {
     font-size: 2.5rem;
@@ -103,13 +96,9 @@
     text-align: center;
 }
 
-#data-sum li {
-    font-size: 1.5rem;
-}
+#data-sum li {font-size: 1.5rem;}
 
-#data-sum li strong {
-    font-size: 1.5rem;
-}
+#data-sum li strong {font-size: 1.5rem;}
 
 #data-sum p {
     font-size: 1.5rem;
@@ -128,9 +117,7 @@
     padding: 1rem 4rem;
 }
 
-#head-title h1 {
-    font-size: 6rem;
-}
+#head-title h1 {font-size: 6rem;}
 
 #head-title p {
     font-size: 2.5rem;
@@ -149,6 +136,26 @@
     padding: 3rem 5rem;
 }
 
-#quote article p {
-    font-size: 1.25rem;
+#quote article p {font-size: 1.25rem;}
+
+@media only screen and (max-width: 760px) {
+    .info {flex-direction: column;}
+
+    .info article {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #data-sum p {width: 80%;}
+
+    #data-sum ul {width: 75%;}
+}
+
+@media only screen and (max-width:410px) {
+    #head-title h1 {font-size: 4rem;}
+
+    #head-title p {
+        font-size: 1.75rem;
+        font-style: italic;
+    }
 }

@@ -8,17 +8,11 @@ h1, h2, h3 {
     text-align: center;
 }
 
-h1 {
-    font-size: 1.75rem;
-}
+h1 {font-size: 1.75rem;}
 
-h2 {
-    font-size: 1.25rem;
-}
+h2 {font-size: 1.25rem;}
 
-h2 {
-    font-size: 1.125rem;
-}
+h3 {font-size: 1.125rem;}
 
 hr {
     background: none;
@@ -28,9 +22,7 @@ hr {
     width: 50%;
 }
 
-li {
-    margin: 0.4rem 0;
-}
+li {margin: 0.4rem 0;}
 
 main section a {
     color: #8f00ff;
@@ -42,22 +34,16 @@ main section a:hover {
     opacity: 0.5;
 }
 
-main section a:active {
-    color: #fff;
-}
+main section a:active {color: #fff;}
 
-ol, p, ul {
-    margin: 0.6rem 0;
-}
+ol, p, ul {margin: 0.6rem 0;}
 
 ol, ul {
     margin: 0.6rem auto;
     width: 90%;
 }
 
-section {
-    padding: 3rem 0;
-}
+section {padding: 3rem 0;}
 
 #back-image {
     background-image: url("/static/image/logo.png");
@@ -81,9 +67,7 @@ section {
     padding: 1rem 4rem;
 }
 
-#head-title h1 {
-    font-size: 6rem;
-}
+#head-title h1 {font-size: 6rem;}
 
 #head-title p {
     font-size: 2.5rem;
@@ -95,22 +79,33 @@ section {
     color: #0e0b16;
 }
 
-#overview {
-    border-top: none;
+#overview {border-top: none;}
+
+#overview h1 {font-size: 3rem;}
+
+#overview p, #overview strong {font-size: 1.5rem;}
+
+#table-of-contents h1 {font-size: 2rem;}
+
+#table-of-contents a, #table-of-contents li, #table-of-contents p {font-size: 1.25rem;}
+
+@media only screen and (max-width:629px) {
+    article {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    hr {
+        margin: 0 10%;
+        width: 80%;
+    }
 }
 
-#overview h1 {
-    font-size: 3rem;
-}
+@media only screen and (max-width:410px) {
+    #head-title h1 {font-size: 4rem;}
 
-#overview p, #overview strong {
-    font-size: 1.5rem;
-}
-
-#table-of-contents h1 {
-    font-size: 2rem;
-}
-
-#table-of-contents a, #table-of-contents li, #table-of-contents p {
-    font-size: 1.25rem;
+    #head-title p {
+        font-size: 1.75rem;
+        font-style: italic;
+    }
 }
