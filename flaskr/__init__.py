@@ -38,7 +38,7 @@ def create_app(test_config=None):
             msg.set_content(error_message)
             msg['Subject'] = 'Gymmate App Crash'
             msg['From'] = 'lk27auggee@gmail.com'
-            msg['To'] = 'ghwilliams305@gmail.com'
+            msg['To'] = 'contact@gymmateapp.net'
 
             smtp_server = "smtp.gmail.com"
             port = 587
@@ -50,7 +50,7 @@ def create_app(test_config=None):
 
             return 'successful'
 
-        return 'exercise_rating'
+        return 'error'
 
     from . import db
     db.init_app(app)
