@@ -123,7 +123,6 @@ def set_data():
                 SELECT *
                 FROM workout_data
                 WHERE user_id = ?
-                LIMIT 30
                 """, 
                 (user_id, )).fetchall()
             if not workout_data:
@@ -138,7 +137,6 @@ def set_data():
                 SELECT *
                 FROM exercise_data
                 WHERE user_id = ?
-                LIMIT 30
                 """, 
                 (user_id, )).fetchall()
             exercise_data = list(exercise_data)
@@ -152,7 +150,6 @@ def set_data():
                 SELECT *
                 FROM workout_equipment
                 WHERE workout_data_id IN ({placeholder})
-                LIMIT 30
                 """, 
                 tuple(workout_ids)).fetchall()
             workout_equipment = list(workout_equipment)
@@ -162,7 +159,6 @@ def set_data():
                 SELECT *
                 FROM workout_matrix
                 WHERE workout_data_id IN ({placeholder})
-                LIMIT 30
                 """, 
                 tuple(workout_ids)).fetchall()
             workout_matrix = list(workout_matrix)
