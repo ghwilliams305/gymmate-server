@@ -3,11 +3,14 @@ import os
 from flask import Flask, request, redirect, url_for
 from cryptography.fernet import Fernet
 from authlib.integrations.flask_client import OAuth
+from dotenv import load_dotenv
 
 def create_app(test_config=None):
+    load_dotenv()
+
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='685a83021836f61f69d93dd775af517b18b753d8501ac4385c7be4ead70a6788',
+        SECRET_KEY=os.getenv("SECRET_KEY"),
         SERVER_NAME='localhost:5000',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
@@ -42,10 +45,11 @@ def create_app(test_config=None):
 
             smtp_server = "smtp.gmail.com"
             port = 587
+            PASSWORD = os.getenv('EMAIL_PASS')
 
             with smtplib.SMTP(smtp_server, port) as server:
                 server.starttls()
-                server.login("lk27auggee@gmail.com", "ihuu qirm adae hwpc")
+                server.login("lk27auggee@gmail.com", PASSWORD)
                 server.send_message(msg)
 
             return 'successful'

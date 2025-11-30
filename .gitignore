@@ -4,6 +4,7 @@
 __pycache__/
 
 instance/
+.env
 
 .pytest_cache/
 .coverage

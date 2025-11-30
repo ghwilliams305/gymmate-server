@@ -12,8 +12,8 @@ bp = Blueprint('google', __name__, url_prefix='/google')
 oauth = OAuth()
 
 def register_google_oauth():
-    GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
-    GOOGLE_CLIENT_SECRET = os.environ.get('GOOGLE_CLIENT_SECRET')
+    GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
+    GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
     CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
 
     oauth.register(
