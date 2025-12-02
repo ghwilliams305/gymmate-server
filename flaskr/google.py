@@ -10,7 +10,7 @@ from flask import (
 from werkzeug.security import check_password_hash, generate_password_hash
 from authlib.integrations.flask_client import OAuth
 
-from flaskr.db import get_db, encrypt_id
+from flaskr.db import get_db
 
 bp = Blueprint('google', __name__, url_prefix='/google')
 oauth = OAuth()
@@ -50,7 +50,7 @@ def portal_google_auth():
     if error is None:
         try:
             google_user = oauth.google.parse_id_token(token, nonce)
-            username = f"google_user:{encrypt_id(int(google_user['sub']))}"
+            username = f"google_user:{google_user['sub']}"
             db = get_db()
             error = None
             user = db.execute(
@@ -91,7 +91,7 @@ def android_google_auth():
     if error is None:
         try:
             google_user = oauth.google.parse_id_token(token, nonce)
-            google_id =encrypt_id(int(google_user['sub']))
+            google_id = int(google_user['sub'])
             email = google_user['email']
             name = google_user['name']
 
