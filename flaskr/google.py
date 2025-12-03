@@ -91,7 +91,7 @@ def android_google_auth():
     if error is None:
         try:
             google_user = oauth.google.parse_id_token(token, nonce)
-            google_id = int(google_user['sub'])
+            google_id = str(google_user['sub'])
             email = google_user['email']
             name = google_user['name']
 
